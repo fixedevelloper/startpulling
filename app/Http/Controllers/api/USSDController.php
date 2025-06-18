@@ -10,6 +10,11 @@ use Illuminate\Http\Request;
 class USSDController extends Controller
 {
 
+    public function cinetPayWebhook(Request $request){
+
+        logger(  $request->all());
+        return response()->json(['status' => 'received']);
+    }
 
     public function getRequest()
     {

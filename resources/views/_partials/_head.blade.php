@@ -56,8 +56,8 @@ Mobile Menu
         </div>
         <div class="mobile-menu">
             <ul>
-                <li>
-                    <a href="{!! route('home') !!}">Transactions</a>
+                <li class="active-class">
+                    <a  class="active" href="{!! route('home') !!}">Transactions</a>
                 </li>
 
                 <li>
@@ -87,12 +87,12 @@ Header Area
                     <nav class="main-menu d-none d-lg-inline-block">
 
                         <ul>
-                            <li>
+                            <li class="active-class">
                                 <a href="{!! route('home') !!}">Transactions</a>
                             </li>
 
                             <li>
-                                <a href="#">Pays</a>
+                                <a class="active" href="{{route('countries')}}">Pays</a>
                             </li>
                             <li>
                                 <a href="{{route('create')}}">Create</a>

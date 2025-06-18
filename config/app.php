@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'FLUTTERWAVE_SECRET_KEY'=>env('FLUTTERWAVE_SECRET_KEY'),
+    'CINETPAY_APIKEY'=>env('CINETPAY_APIKEY'),
+    'CINETPAY_PASSWORD'=>env('CINETPAY_PASSWORD')
 ];

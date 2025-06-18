@@ -13,3 +13,4 @@ Route::post('/report-ussd', [USSDController::class, 'saveResponse']);
 Route::get('/check-ussd', [USSDController::class, 'getRequest']);
 Route::get('/transactions', [USSDController::class, 'getLastTransactions']);
 Route::get('/transaction', [USSDController::class, 'getLastTransaction']);
+Route::match(['POST','GET'],'/cinetPayWebhook', [USSDController::class, 'cinetPayWebhook'])->name('cinetpay.notify');

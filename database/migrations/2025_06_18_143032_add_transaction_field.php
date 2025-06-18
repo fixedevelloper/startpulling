@@ -11,13 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('countries', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('code_phone')->nullable();
-            $table->string('iso');
-            $table->string('currency');
-            $table->timestamps();
+        Schema::table('transactions', function (Blueprint $table) {
+            $table->text('response')->nullable();
+            $table->string('transaction_id')->nullable();
         });
     }
 
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('countries');
+        //
     }
 };

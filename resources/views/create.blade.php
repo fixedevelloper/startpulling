@@ -26,24 +26,15 @@
                                 <i class="fas fa-angle-down"></i>
                             </div>
                             <div class="col-md-12 form-group">
-                                <select name="sim" id="sim" class="form-select style-border">
-                                    <option value="" disabled="" selected="" hidden="">Sim</option>
-                                    <option value="send">Envoi</option>
-                                    <option value="receive">Retrait</option>
+                                <select name="bank_id" id="sim" class="form-select style-border">
+                                    <option value="" disabled="" selected="" hidden="">Gateway</option>
                                 </select>
                                 <i class="fas fa-angle-down"></i>
                             </div>
                             <div class="col-md-12 form-group">
                                 <input name="phone" type="text" placeholder="Phone Number" class="form-control style-border">
                             </div>
-                            <div class="col-md-12 form-group">
-                                <select name="type_transaction" id="subject" class="form-select style-border">
-                                    <option value="" disabled="" selected="" hidden="">Type transaction</option>
-                                    <option value="01">Envoi</option>
-                                    <option value="02">Retrait</option>
-                                </select>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
+
                             <div class="col-md-12 form-group">
                                 <input name="amount" autocomplete="off" type="text" placeholder="Montant" class="form-control style-border">
                             </div>

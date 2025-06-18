@@ -4,9 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Country;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,17 +16,43 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Admin user',
+            'email' => 'admin@creativsoftcm.com',
         ]);
         $country=new Country();
         $country->name='Cameroon';
         $country->iso='CM';
+        $country->code_phone='237';
+        $country->currency='XAF';
         $country->save();
         $country=new Country();
         $country->name='Ivoiry coast';
+        $country->code_phone='225';
         $country->iso='CI';
+        $country->currency='XOF';
         $country->save();
+        $country=new Country();
+        $country->name='Senegal';
+        $country->code_phone='221';
+        $country->currency='XOF';
+        $country->iso='SN';
+        $country->save();
+        $country=new Country();
+        $country->name='Benin';
+        $country->code_phone='229';
+        $country->iso='BJ';
+        $country->currency='XOF';
+        $country->save();
+        $country=new Country();
+        $country->name='Burkina faso';
+        $country->iso='BF';
+        $country->code_phone='226';
+        $country->currency='XOF';
+        $country->save();
+
+
+
+/*
         DB::table('sims')->insert(array (
             0 =>
                 array (
@@ -72,6 +96,6 @@ class DatabaseSeeder extends Seeder
                 ),
 
 
-        ));
+        ));*/
     }
 }
