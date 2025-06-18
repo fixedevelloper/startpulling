@@ -25,12 +25,12 @@
                                 </select>
                                 <i class="fas fa-angle-down"></i>
                             </div>
-                            <div class="col-md-12 form-group">
+                         {{--   <div class="col-md-12 form-group">
                                 <select name="bank_id" id="sim" class="form-select style-border">
                                     <option value="" disabled="" selected="" hidden="">Gateway</option>
                                 </select>
                                 <i class="fas fa-angle-down"></i>
-                            </div>
+                            </div>--}}
                             <div class="col-md-12 form-group">
                                 <input name="phone" type="text" placeholder="Phone Number" class="form-control style-border">
                             </div>

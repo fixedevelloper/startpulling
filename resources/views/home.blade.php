@@ -12,11 +12,11 @@
                     <thead>
                     <tr>
                         <th>#</th>
+                        <th>Customer</th>
                         <th>Date</th>
                         <th>N Phone</th>
                         <th>Montant</th>
                         <th>Pays</th>
-                        <th>Gateway</th>
                         <th>Status</th>
                     </tr>
                     </thead>
@@ -24,11 +24,12 @@
                     @foreach($items as $item)
                         <tr>
                             <td></td>
+                            <td>{{$item->customer}}</td>
                             <td>{{$item->created_at}}</td>
                             <td>{{$item->phone}}</td>
                             <td>{{$item->amount}}</td>
                             <td>{{$item->country->name}}</td>
-                            <td>{{$item->bank->name}}</td>
+                           {{-- <td>{{$item->bank->name}}</td>--}}
                             <td>{{$item->status}}</td>
                         </tr>
                     @endforeach
